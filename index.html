@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Practice</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+    <div class="banner-container">
+        <img src="banner.jpg" alt="Clouds during sunset" class="banner-bg">
+      
+        <div class="overlay-content">
+          <img id="logo" src="logo2.png" alt="Logo that looks like a colorful sunset">
+          <p id="banner-text">BREATHE</p>
+          <p id="banner-credit">Photo by</p>
+        </div>
+      </div>
+
+    <div>
+        <div>
+            <p>This is not a real online service! But we now it would be amazing if it was. We offer free retreats in nature. </p>
+            <p>Feel free to sign up. You know you <em>want</em> to</p>
+        </div>
+
+        <div>
+            <p>Let's do this!</p>
+
+            <form>
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required minlength="2" />
+              
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required minlength="2" />
+              
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+              
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required pattern="[0-7]{8}" title="Enter an 8-digit phone number" />
+              
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required minlength="6" />
+              
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required minlength="6" />
+              
+                <button type="submit">Submit</button>
+              </form>
+              
+        </div>
+
+        <div>
+            <button>Create Account</button>
+            <p>Already have an account? Log in here.</p>
+        </div>
+    </div>
+
+</body>
+</html>

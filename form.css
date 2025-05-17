@@ -1,0 +1,95 @@
+/* === CSS Reset === */
+* {
+    margin: 0;
+    padding: 0;
+    /*It makes width and height include padding and border by default, which simplifies layout math
+     and is widely recommended.*/
+    box-sizing: border-box;
+  }
+  
+/* === Root Variables === */
+:root {
+    /* Typography */
+    --font-primary: 'Playfair Display', serif;
+    --font-size-base: 16px;
+    /* Spacing between lines of text*/
+    --line-height-base: 1.6;
+  
+    /* Colors */
+    --color-bg: #ffffff;
+    --color-text: #333333;
+    --color-accent: #0066cc;
+    --color-error: #d32f2f;
+    --color-border: #E5E7EB;
+  
+    /* Spacing */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+  
+    /* Rounded Borders */
+    --border-radius: 6px;
+  }
+  
+  /* === Global Styles === */
+  body {
+    font-family: var(--font-primary);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+  }
+
+  .banner-container {
+    position: relative;
+    width: 600px;
+    max-height: 100%;
+    overflow: hidden;
+  }
+  
+  .banner-bg {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .overlay-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: var(--spacing-md);
+    /* prevents blocking clicks */
+    pointer-events: none; 
+  }
+  
+  #logo {
+    width: 200px;
+    height: auto;
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  #banner-text {
+    font-size: 2.5rem;
+    color: var(--color-bg);
+    text-shadow: 1px 1px 4px var(--color-text);
+    margin-bottom: var(--spacing-xs);
+  }
+  
+  #banner-credit {
+    font-size: 1rem;
+    color: var(--color-bg);
+    text-shadow: 1px 1px 4px var(--color-text);
+  }
+  
+  .banner-container {
+    
+  }
